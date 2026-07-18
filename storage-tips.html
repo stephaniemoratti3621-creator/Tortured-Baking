@@ -183,6 +183,81 @@
     color: rgba(28,26,26,0.4);
   }
 </style>
+<style>
+  .back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-family: 'Space Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--rose-deep);
+    text-decoration: none;
+    margin-bottom: 22px;
+  }
+  .back-link svg { width: 13px; height: 13px; }
+  .section-title {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 22px;
+    color: var(--ink);
+    margin: 0 0 4px;
+    text-align: center;
+  }
+  .section-sub {
+    text-align: center;
+    font-size: 13px;
+    color: var(--grey);
+    margin: 0 0 26px;
+  }
+  .tip-card {
+    background: #FFFFFF;
+    border: 1.5px solid rgba(28,26,26,0.09);
+    border-radius: 14px;
+    padding: 18px 20px;
+  }
+  .tip-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--ink);
+    margin: 0 0 8px;
+  }
+  .tip-icon {
+    flex: 0 0 auto;
+    width: 32px;
+    height: 32px;
+    border-radius: 9px;
+    background: var(--rose-pale);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--rose-deep);
+  }
+  .tip-icon svg { width: 16px; height: 16px; }
+  .tip-text {
+    font-size: 13.5px;
+    line-height: 1.6;
+    color: var(--ink);
+    margin: 0;
+  }
+  .tip-note {
+    margin-top: 30px;
+    background: var(--rose-pale);
+    border-radius: 14px;
+    padding: 18px 20px;
+  }
+  .tip-note p {
+    font-size: 13px;
+    line-height: 1.6;
+    color: var(--ink);
+    margin: 0;
+  }
+</style>
 </head>
 <body>
 
@@ -202,67 +277,93 @@
     <line x1="330" y1="8" x2="390" y2="8" stroke="#DD9C9B" stroke-width="1.4" stroke-linecap="round" transform="rotate(-8 360 8)"/>
   </svg>
 
-  <div class="links">
-
-    <a class="link-card" href="menu.html">
-      <span class="icon">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 8h12l-1.2 11.2a2 2 0 0 1-2 1.8H9.2a2 2 0 0 1-2-1.8L6 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
-      </span>
-      <span class="link-text">
-        <span class="link-title">Order here</span>
-        <span class="link-sub">Place your order</span>
-      </span>
-      <span class="badge">Order</span>
+    <a class="back-link" href="recipes.html">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+      Back
     </a>
 
-    <a class="link-card" href="recipes.html">
-      <span class="icon">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 6h16v12H4V6Z"/><path d="M4 7l8 6 8-6"/></svg>
-      </span>
-      <span class="link-text">
-        <span class="link-title">Recipes and Tips</span>
-        <span class="link-sub">Your favorite tortured recipes</span>
-      </span>
-      <span class="badge">Recipes</span>
-    </a>
+    <h2 class="section-title">Sourdough Storage Tips</h2>
+    <p class="section-sub">Keeping your loaf fresh in Arizona's dry heat</p>
 
-    <a class="link-card" href="https://www.instagram.com/torturedbaking" target="_blank" rel="noopener">
-      <span class="icon">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg>
-      </span>
-      <span class="link-text">
-        <span class="link-title">Instagram</span>
-        <span class="link-sub">@torturedbaking</span>
-      </span>
-      <span class="badge">Follow</span>
-    </a>
+    <div class="links">
 
-    <a class="link-card" href="https://youtube.com/@torturedbaking" target="_blank" rel="noopener">
-      <span class="icon">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path d="M10.5 9.5v5l4.3-2.5-4.3-2.5Z" fill="currentColor" stroke="none"/></svg>
-      </span>
-      <span class="link-text">
-        <span class="link-title">YouTube</span>
-        <span class="link-sub">@torturedbaking</span>
-      </span>
-      <span class="badge">Watch</span>
-    </a>
+      <div class="tip-card">
+        <div class="tip-title">
+          <span class="tip-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 6h16v12H4V6Z"/><path d="M4 7l8 6 8-6"/></svg>
+          </span>
+          Skip the fridge
+        </div>
+        <p class="tip-text">Arizona's low humidity already pulls moisture out of bread fast, and refrigeration speeds up staling even more. Keep your loaf at room temperature and it'll stay fresher, longer.</p>
+      </div>
 
-    <a class="link-card" href="mailto:torturedbaking@gmail.com">
-      <span class="icon">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M4 7l8 6 8-6"/></svg>
-      </span>
-      <span class="link-text">
-        <span class="link-title">Contact Us</span>
-        <span class="link-sub">torturedbaking@gmail.com</span>
-      </span>
-      <span class="badge">Email</span>
-    </a>
+      <div class="tip-card">
+        <div class="tip-title">
+          <span class="tip-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 6h16v12H4V6Z"/><path d="M4 7l8 6 8-6"/></svg>
+          </span>
+          Paper first, plastic second
+        </div>
+        <p class="tip-text">Wrap the loaf loosely in a paper bag to protect the crust, then place it inside a plastic bag or reusable bread bag. The paper keeps crust crisp, the plastic keeps our dry air from wicking away moisture too fast. Best of both worlds.</p>
+      </div>
+
+      <div class="tip-card">
+        <div class="tip-title">
+          <span class="tip-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 6h16v12H4V6Z"/><path d="M4 7l8 6 8-6"/></svg>
+          </span>
+          Cut side down
+        </div>
+        <p class="tip-text">Once you've sliced into it, rest the loaf cut-side down on a wooden board or plate. It seals in moisture at the exposed crumb, which matters even more here than in a humid climate.</p>
+      </div>
+
+      <div class="tip-card">
+        <div class="tip-title">
+          <span class="tip-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 6h16v12H4V6Z"/><path d="M4 7l8 6 8-6"/></svg>
+          </span>
+          Freeze what you won't eat in 2 days
+        </div>
+        <p class="tip-text">Sourdough is best within the first 1-2 days at room temp. Beyond that, slice the rest and freeze in an airtight bag for up to 3 months. Pull slices straight from the freezer into the toaster.</p>
+      </div>
+
+      <div class="tip-card">
+        <div class="tip-title">
+          <span class="tip-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 6h16v12H4V6Z"/><path d="M4 7l8 6 8-6"/></svg>
+          </span>
+          Keep it out of the sun and the car
+        </div>
+        <p class="tip-text">A hot car or a sunny kitchen counter can push a loaf well past 90°F, which dries it out and can promote mold growth just as fast as humidity can. Store it in a cool, shaded spot in the kitchen — a pantry or cabinet works well.</p>
+      </div>
+
+      <div class="tip-card">
+        <div class="tip-title">
+          <span class="tip-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 6h16v12H4V6Z"/><path d="M4 7l8 6 8-6"/></svg>
+          </span>
+          Watch for monsoon humidity
+        </div>
+        <p class="tip-text">During monsoon season (roughly July through September), humidity spikes can bring mold risk that our dry months don't usually have. Check bread a little more often during these weeks, and don't hesitate to freeze extra loaves.</p>
+      </div>
+
+      <div class="tip-card">
+        <div class="tip-title">
+          <span class="tip-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 6h16v12H4V6Z"/><path d="M4 7l8 6 8-6"/></svg>
+          </span>
+          Refresh a tired crust
+        </div>
+        <p class="tip-text">If the crust softens after a day or two, pop the loaf in a 350°F oven for 5-8 minutes. It'll come back out crackly and fresh-tasting.</p>
+      </div>
+
+    </div>
+
+    <div class="tip-note">
+      <p>Every kitchen's a little different — swamp coolers, AC units, and open windows all change how fast bread dries out. These are starting points, so adjust based on how your loaf behaves at home.</p>
+    </div>
 
   </div>
-
-
-</div>
 
 </body>
 </html>

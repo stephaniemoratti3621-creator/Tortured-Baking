@@ -174,6 +174,26 @@
     flex: 0 0 auto;
   }
 
+  /* gold accent variant, used for the storage tips tile */
+  .link-card.tip-tile {
+    border-color: rgba(196,148,60,0.35);
+    background: #FFFDF7;
+  }
+  .link-card.tip-tile::before {
+    background: #C4943C;
+  }
+  .link-card.tip-tile:hover, .link-card.tip-tile:focus-visible {
+    border-color: rgba(196,148,60,0.6);
+  }
+  .link-card.tip-tile .icon {
+    background: #F6E9D0;
+    color: #9A6E24;
+  }
+  .link-card.tip-tile .badge {
+    background: #F6E9D0;
+    color: #9A6E24;
+  }
+
   footer {
     margin-top: 40px;
     text-align: center;
@@ -236,7 +256,7 @@
       Back
     </a>
 
-    <h2 class="section-title">Sourdough Recipes</h2>
+    <h2 class="section-title">Recipes and Tips</h2>
     <p class="section-sub">Your favorite tortured recipes</p>
 
     <div class="links">
@@ -272,6 +292,17 @@
           <span class="link-sub">Full recipe</span>
         </span>
         <span class="badge">Recipe</span>
+      </a>
+
+      <a class="link-card tip-tile" href="storage-tips.html">
+        <span class="icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3 4 7v6c0 4.4 3.4 8.4 8 9 4.6-.6 8-4.6 8-9V7l-8-4Z"/></svg>
+        </span>
+        <span class="link-text">
+          <span class="link-title">Sourdough Storage Tips</span>
+          <span class="link-sub">Keeping bread fresh in AZ</span>
+        </span>
+        <span class="badge">Tips</span>
       </a>
 
     </div>
