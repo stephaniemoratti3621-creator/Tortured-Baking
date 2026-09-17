@@ -83,6 +83,56 @@
     text-transform: uppercase;
     color: var(--grey-light);
     margin: 26px 2px 10px;
+    text-align: center;
+  }
+
+  .social-row {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    margin-bottom: 14px;
+  }
+  .social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 1.5px solid rgba(221,156,155,0.45);
+    color: var(--rose);
+    text-decoration: none;
+    transition: background 0.18s ease, border-color 0.18s ease, transform 0.18s ease;
+  }
+  .social-link svg {
+    width: 19px;
+    height: 19px;
+  }
+  .social-link:hover, .social-link:focus-visible {
+    background: rgba(221,156,155,0.14);
+    border-color: var(--rose);
+    transform: translateY(-2px);
+  }
+  .social-link:focus-visible {
+    outline: 2px solid var(--rose);
+    outline-offset: 2px;
+  }
+  .contact-line {
+    text-align: center;
+    font-size: 12.5px;
+    color: var(--grey-light);
+    margin: 0 0 6px;
+  }
+  .contact-line a {
+    color: var(--rose);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    padding: 2px 1px;
+  }
+  .contact-line a:focus-visible {
+    outline: 2px solid var(--rose);
+    outline-offset: 2px;
+    border-radius: 2px;
   }
 
   /* --- Scored divider: signature element, echoes the wheat sprig in the logo --- */
@@ -341,53 +391,27 @@
 
   <p class="section-label">Connect</p>
 
-  <div class="links">
+  <div class="social-row">
 
-    <a class="link-card" href="https://www.instagram.com/torturedbaking" target="_blank" rel="noopener">
-      <span class="icon">
-        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg>
-      </span>
-      <span class="link-text">
-        <span class="link-title">Instagram</span>
-        <span class="link-sub">@torturedbaking</span>
-      </span>
-      <span class="badge">Follow</span>
+    <a class="social-link" href="https://www.instagram.com/torturedbaking" target="_blank" rel="noopener" aria-label="Instagram">
+      <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg>
     </a>
 
-    <a class="link-card" href="https://www.facebook.com/profile.php?id=61592022205578" target="_blank" rel="noopener">
-      <span class="icon">
-        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M15 8h-2c-1.1 0-2 .9-2 2v2H9v3h2v7h3v-7h2.2l.8-3H14v-1.5c0-.6.4-1 1-1h1.5V8Z"/></svg>
-      </span>
-      <span class="link-text">
-        <span class="link-title">Facebook</span>
-        <span class="link-sub">Follow along</span>
-      </span>
-      <span class="badge">Follow</span>
+    <a class="social-link" href="https://www.facebook.com/profile.php?id=61592022205578" target="_blank" rel="noopener" aria-label="Facebook">
+      <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M15 8h-2c-1.1 0-2 .9-2 2v2H9v3h2v7h3v-7h2.2l.8-3H14v-1.5c0-.6.4-1 1-1h1.5V8Z"/></svg>
     </a>
 
-    <a class="link-card" href="https://youtube.com/@torturedbaking" target="_blank" rel="noopener">
-      <span class="icon">
-        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path d="M10.5 9.5v5l4.3-2.5-4.3-2.5Z" fill="currentColor" stroke="none"/></svg>
-      </span>
-      <span class="link-text">
-        <span class="link-title">YouTube</span>
-        <span class="link-sub">@torturedbaking</span>
-      </span>
-      <span class="badge">Watch</span>
+    <a class="social-link" href="https://www.tiktok.com/@torturedbaking" target="_blank" rel="noopener" aria-label="TikTok">
+      <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 3v10.5a3.5 3.5 0 1 1-3-3.46"/><path d="M14 3c.4 2.6 2 4.2 4.6 4.5"/></svg>
     </a>
 
-    <a class="link-card" href="mailto:torturedbaking@gmail.com">
-      <span class="icon">
-        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M4 7l8 6 8-6"/></svg>
-      </span>
-      <span class="link-text">
-        <span class="link-title">Contact Us</span>
-        <span class="link-sub">torturedbaking@gmail.com</span>
-      </span>
-      <span class="badge">Email</span>
+    <a class="social-link" href="https://youtube.com/@torturedbaking" target="_blank" rel="noopener" aria-label="YouTube">
+      <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path d="M10.5 9.5v5l4.3-2.5-4.3-2.5Z" fill="currentColor" stroke="none"/></svg>
     </a>
 
   </div>
+
+  <p class="contact-line"><a href="mailto:torturedbaking@gmail.com">torturedbaking@gmail.com</a></p>
 
 
 </div>
