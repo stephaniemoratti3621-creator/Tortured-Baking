@@ -76,6 +76,49 @@
     margin-top: 22px;
   }
 
+  /* --- Upcoming markets announcement --- */
+  .markets-banner {
+    border: 1.5px solid rgba(221,156,155,0.5);
+    border-radius: 14px;
+    padding: 16px 18px 15px;
+    margin-bottom: 20px;
+    background: rgba(221,156,155,0.06);
+  }
+  .markets-banner .markets-label {
+    font-family: 'Space Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--rose);
+    text-align: center;
+    margin: 0 0 12px;
+  }
+  .markets-banner ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .markets-banner li + li {
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid rgba(221,156,155,0.22);
+  }
+  .market-date {
+    display: block;
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 14.5px;
+    color: var(--cream);
+    line-height: 1.35;
+  }
+  .market-place {
+    display: block;
+    font-size: 12.5px;
+    color: var(--grey-light);
+    margin-top: 3px;
+    line-height: 1.45;
+  }
+
   .section-label {
     font-family: 'Space Mono', monospace;
     font-size: 10.5px;
@@ -329,6 +372,20 @@
     <line x1="250" y1="8" x2="310" y2="8" stroke="#DD9C9B" stroke-width="1.4" stroke-linecap="round" transform="rotate(-8 280 8)"/>
     <line x1="330" y1="8" x2="390" y2="8" stroke="#DD9C9B" stroke-width="1.4" stroke-linecap="round" transform="rotate(-8 360 8)"/>
   </svg>
+
+  <section class="markets-banner" aria-label="Upcoming markets">
+    <p class="markets-label">📍 Catch us at these markets</p>
+    <ul>
+      <li>
+        <span class="market-date">Sunday, November 8 &middot; 12&ndash;2pm</span>
+        <span class="market-place">Sunrays Gymnastics &mdash; 32nd St. &amp; Greenway</span>
+      </li>
+      <li>
+        <span class="market-date">Wednesday, November 25 &middot; 9am&ndash;12pm</span>
+        <span class="market-place">Moon Valley Park</span>
+      </li>
+    </ul>
+  </section>
 
   <div class="links">
 
