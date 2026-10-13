@@ -242,6 +242,34 @@
     color: var(--grey-light);
     margin-top: 2px;
   }
+  /* --- Ordering blackout notice --- */
+  .order-notice {
+    border: 1.5px solid rgba(232,184,109,0.45);
+    border-radius: 14px;
+    background: rgba(232,184,109,0.07);
+    padding: 15px 18px 14px;
+    margin-bottom: 24px;
+  }
+  .order-notice .notice-label {
+    font-family: 'Space Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #E8B86D;
+    text-align: center;
+    margin: 0 0 8px;
+  }
+  .order-notice p.notice-body {
+    font-size: 13px;
+    line-height: 1.6;
+    color: var(--cream);
+    text-align: center;
+    margin: 0;
+  }
+  .order-notice .notice-dates {
+    font-weight: 600;
+    color: #E8B86D;
+  }
   .menu-item {
     position: relative;
     background: #FFFFFF;
@@ -422,6 +450,11 @@
 
     <h2 class="section-title">Sourdough Menu</h2>
     <p class="section-sub">Baked fresh, one tortured loaf at a time</p>
+
+    <section class="order-notice" aria-label="Ordering availability notice">
+      <p class="notice-label">Ordering pause</p>
+      <p class="notice-body">Orders are unavailable <span class="notice-dates">November 4&ndash;7</span> and <span class="notice-dates">November 22&ndash;27</span> while we prepare for holiday markets. Thank you for your patience!</p>
+    </section>
 
     <div class="links">
 
