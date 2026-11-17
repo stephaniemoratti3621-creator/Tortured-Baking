@@ -332,6 +332,29 @@
     color: #9A6E24;
   }
 
+  /* inverted story card, used for About */
+  .link-card.about-tile {
+    background: #261C1C;
+    border: 1.5px solid rgba(221,156,155,0.55);
+  }
+  .link-card.about-tile::before {
+    background: var(--rose);
+  }
+  .link-card.about-tile:hover, .link-card.about-tile:focus-visible {
+    border-color: var(--rose);
+    box-shadow: 0 10px 24px rgba(221,156,155,0.18);
+  }
+  .link-card.about-tile .icon {
+    background: rgba(221,156,155,0.16);
+    color: var(--rose);
+  }
+  .link-card.about-tile .link-title { color: var(--cream); }
+  .link-card.about-tile .link-sub { color: var(--grey-light); }
+  .link-card.about-tile .badge {
+    background: rgba(221,156,155,0.18);
+    color: var(--rose);
+  }
+
   footer {
     margin-top: 40px;
     text-align: center;
@@ -440,6 +463,17 @@
         <span class="link-sub">Keeping your loaf fresh in AZ</span>
       </span>
       <span class="badge">Tips</span>
+    </a>
+
+    <a class="link-card about-tile" href="about.html">
+      <span class="icon">
+        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M12 21V8"/><path d="M12 8c0-2.5 1.6-4.4 4-5 .3 2.6-1.1 4.6-4 5Z"/><path d="M12 13c0-2.4 1.6-4.2 4-4.8.3 2.5-1.1 4.4-4 4.8Z"/><path d="M12 8C12 5.5 10.4 3.6 8 3c-.3 2.6 1.1 4.6 4 5Z"/><path d="M12 13c0-2.4-1.6-4.2-4-4.8-.3 2.5 1.1 4.4 4 4.8Z"/></svg>
+      </span>
+      <span class="link-text">
+        <span class="link-title">About Me</span>
+        <span class="link-sub">How a hobby became a bakery</span>
+      </span>
+      <span class="badge">Story</span>
     </a>
 
   </div>
